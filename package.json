@@ -1,0 +1,15 @@
+{
+  "name": "node-red-contrib-lynx-iberian",
+  "node-red": {
+    "nodes": {
+      "lynx-config": "lynx-config/lynx-config.js",
+      "lynx-input": "lynx-input/lynx-input.js",
+      "lynx-explorer": "lynx-explorer/lynx-explorer.js",
+      "lynx-publisher": "lynx-publisher/lynx-publisher.js",
+      "lynx-output": "lynx-output/lynx-output.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
+}

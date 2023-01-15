@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lynx-explorer',{
+        category: 'function',
+        color: '#ffab91',
+        defaults: {
+            name: {value:""},
+            driver: {value: "", required: true},
+            lynx: {value: "", type: "lynx-config", required: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"Get image";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lynx-explorer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-lynx"><i class="icon-tag"></i>Lynx Server</label>
+        <input type="text" id="node-input-lynx" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-driver"><i class="fa fa-tag"></i> Driver</label>
+        <input type="text" id="node-input-driver">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lynx-explorer">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

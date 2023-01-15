@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lynx-input',{
+        category: 'function',
+        color: '#ffab91',
+        defaults: {
+            name: {value:""},
+            lynx: {value: "", type: "lynx-config", required: true},
+            event: {value: "", required: true}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "arrow-in.svg",
+        label: function() {
+            return this.name||`Event: ${this.event}`;
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lynx-input">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-lynx"><i class="icon-tag"></i>Lynx Server</label>
+        <input type="text" id="node-input-lynx" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-event"><i class="icon-tag"></i>Event</label>
+        <input type="text" id="node-input-event" placeholder="">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lynx-input">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
