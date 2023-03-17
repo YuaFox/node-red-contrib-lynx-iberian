@@ -1,9 +1,11 @@
 {
   "name": "node-red-contrib-lynx-iberian",
+  "version": "2023.4.0",
   "node-red": {
     "nodes": {
       "lynx-config": "lynx-config/lynx-config.js",
       "lynx-input": "lynx-input/lynx-input.js",
+      "lynx-gather": "lynx-gather/lynx-gather.js",
       "lynx-explorer": "lynx-explorer/lynx-explorer.js",
       "lynx-publisher": "lynx-publisher/lynx-publisher.js",
       "lynx-output": "lynx-output/lynx-output.js"

@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('lynx-publisher',{
+    RED.nodes.registerType('lynx-gather',{
         category: 'function',
         color: '#ffab91',
         defaults: {
@@ -11,12 +11,12 @@
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.name|| `Post on ${this.driver}`;
+            return this.name|| `Gather from ${this.driver}`;
         }
     });
 </script>
 
-<script type="text/html" data-template-name="lynx-publisher">
+<script type="text/html" data-template-name="lynx-gather">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -31,6 +31,6 @@
     </div>
 </script>
 
-<script type="text/html" data-help-name="lynx-publisher">
+<script type="text/html" data-help-name="lynx-gather">
     <p></p>
 </script>
